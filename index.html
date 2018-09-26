@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+	</head>
+	<body>
+		<div id="app">
+			<h2 class="text-center title">待办事项</h2>
+			<p class="one clearfix">
+				<input type="text" v-model="textVal" placeholder="接下来要做什么..." v-on:keyup.enter="addFun"/>
+				<button type="button" class="an" @click="addFun">添加</button>
+			</p>
+			<table border="" cellspacing="" cellpadding="">
+				<!--在v-for中必须也将下标经行输入否则将未定义-->
+				<tr v-for="(item,index) in items">
+					<!--index是循环tr时所用的下标，将下标看做为实参-->
+					<td>{{item.con}}，{{index}}<button @click="delFun(index)">删除</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</html>

@@ -1,0 +1,38 @@
+#app{
+	width:250px;
+	margin: 100px auto;
+}
+.title{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.one{
+	border: 1px solid gainsboro;
+}
+.one input{
+	border: none;
+	padding: 6px 12px;
+	outline: none;
+}
+.one button{
+	float: right;
+	padding: 6px 12px;
+	background: #337ab7;
+	border: none;
+	outline: none;
+	color: white;
+}
+.one button:active{
+	background: #286090;
+}
+table{
+	width: 100%;
+	border: 0px;
+}
+table td{
+	padding: 6px;
+}
+table td button{
+	float: right;
+	border: none;
+}
